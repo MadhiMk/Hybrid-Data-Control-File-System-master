@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" styleClass="bgimg" stylesheets="@Design.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="hybrid.WelcomeController">
+   <children>
+      <Text layoutX="467.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textheader" text="Sign In" />
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="36.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1436292-9437.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="425.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@UserNoSign.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtuser" labelFloat="true" layoutX="391.0" layoutY="342.0" prefHeight="30.0" prefWidth="220.0" promptText="Enter Your Username" styleClass="text" />
+      <JFXPasswordField fx:id="txtpass" labelFloat="true" layoutX="391.0" layoutY="409.0" prefHeight="30.0" prefWidth="220.0" promptText="Enter Your Password" styleClass="text" />
+      <FontAwesomeIconView glyphName="USER" layoutX="349.0" layoutY="361.0" size="20" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="349.0" layoutY="431.0" size="20" />
+      <JFXButton layoutX="516.0" layoutY="482.0" onAction="#handleLogin" prefHeight="28.0" prefWidth="95.0" text="Sign In" />
+      <JFXButton layoutX="854.0" layoutY="64.0" onAction="#handleRegister" prefHeight="28.0" prefWidth="95.0" text="Register" />
+      <Text layoutX="728.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Not Remember?" />
+      <Text fx:id="textempty" layoutX="657.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" />
+      <Text fx:id="passwordempty" layoutX="657.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" />
+      <Text fx:id="Invalidlogin" layoutX="657.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" />
+   </children>
+</AnchorPane>

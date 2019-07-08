@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" styleClass="bgimg" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hybrid.RegisterController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="24.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1436292-9437.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="164.0" fitWidth="209.0" layoutX="174.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@users.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="217.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textheader" text="Register" />
+      <JFXTextField fx:id="txtus" labelFloat="true" layoutX="172.0" layoutY="393.0" prefHeight="30.0" prefWidth="187.0" promptText="Enter Your Username" styleClass="text" />
+      <JFXPasswordField fx:id="txtpd" labelFloat="true" layoutX="172.0" layoutY="451.0" prefHeight="30.0" prefWidth="187.0" promptText="Enter Your Password" styleClass="text" />
+      <Text layoutX="500.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Answer" />
+      <Text layoutX="500.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Security" />
+      <Text layoutX="500.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Mobile" />
+      <Text layoutX="500.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="E-Mail" />
+      <Text layoutX="500.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Date" />
+      <Text layoutX="500.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Gender" />
+      <Text layoutX="500.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Name" />
+      <JFXTextField fx:id="txtna" layoutX="574.0" layoutY="119.0" prefHeight="30.0" prefWidth="230.0" styleClass="text" />
+      <JFXTextField fx:id="txtemail" layoutX="581.0" layoutY="275.0" prefHeight="30.0" prefWidth="230.0" styleClass="text" />
+      <JFXTextField fx:id="txtmobile" layoutX="581.0" layoutY="330.0" prefHeight="30.0" prefWidth="230.0" styleClass="text" />
+      <JFXTextField fx:id="txtans" layoutX="581.0" layoutY="441.0" prefHeight="30.0" prefWidth="230.0" styleClass="text" />
+      <JFXDatePicker fx:id="date" layoutX="574.0" layoutY="228.0" prefHeight="25.0" prefWidth="230.0" promptText="Select a Date of Birth" styleClass="text" />
+      <JFXRadioButton fx:id="male" layoutX="601.0" layoutY="182.0" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton fx:id="female" layoutX="718.0" layoutY="182.0" text="Female" toggleGroup="$gender" />
+      <JFXButton layoutX="710.0" layoutY="524.0" onAction="#registerUser" prefHeight="28.0" prefWidth="103.0" text="Register" />
+      <JFXButton layoutX="829.0" layoutY="59.0" onAction="#backLogin" prefHeight="28.0" prefWidth="128.0" text="Back to Login " />
+      <FontAwesomeIconView glyphName="USER" layoutX="132.0" layoutY="412.0" size="20" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="132.0" layoutY="473.0" size="20" />
+      <MaterialDesignIconView glyphName="ACCOUNT" layoutX="451.0" layoutY="139.0" size="20" />
+      <MaterialDesignIconView glyphName="GENDER_MALE_FEMALE" layoutX="451.0" layoutY="199.0" size="20" />
+      <MaterialDesignIconView glyphName="CALENDAR" layoutX="451.0" layoutY="250.0" size="20" />
+      <MaterialDesignIconView glyphName="MAIL_RU" layoutX="451.0" layoutY="307.0" size="20" />
+      <MaterialDesignIconView glyphName="CELLPHONE_ANDROID" layoutX="451.0" layoutY="362.0" size="20" />
+      <MaterialDesignIconView glyphName="SHIELD_OUTLINE" layoutX="451.0" layoutY="415.0" size="20" />
+      <MaterialDesignIconView glyphName="MESSAGE_TEXT_OUTLINE" layoutX="451.0" layoutY="473.0" size="20" />
+      <MaterialDesignIconView glyphName="GENDER_MALE" layoutX="581.0" layoutY="199.0" size="20" />
+      <MaterialDesignIconView glyphName="GENDER_FEMALE" layoutX="700.0" layoutY="199.0" size="20" />
+      <Text fx:id="regok" layoutX="821.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" wrappingWidth="164.000004529953" />
+      <JFXComboBox fx:id="combo" layoutX="581.0" layoutY="396.0" prefHeight="28.0" prefWidth="230.0" promptText="Select a Question" />
+   </children>
+</AnchorPane>

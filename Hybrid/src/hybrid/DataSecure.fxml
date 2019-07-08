@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" styleClass="bgimg" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hybrid.DataSecureController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="24.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1436292-9437.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="533.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="File Name" wrappingWidth="92.95703125" />
+      <JFXTextField fx:id="fname" layoutX="626.0" layoutY="204.0" prefHeight="30.0" prefWidth="198.0" styleClass="text" />
+      <Text layoutX="533.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Password" wrappingWidth="78.95703125" />
+      <Text layoutX="533.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Browse File" wrappingWidth="78.95702868700027" />
+      <Text layoutX="533.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Save As" wrappingWidth="65.95703125" />
+      <JFXTextField fx:id="pass1" layoutX="626.0" layoutY="265.0" prefHeight="30.0" prefWidth="198.0" styleClass="text" />
+      <JFXTextField fx:id="bf" layoutX="626.0" layoutY="323.0" prefHeight="30.0" prefWidth="198.0" styleClass="text" />
+      <JFXTextField fx:id="sf" layoutX="626.0" layoutY="377.0" prefHeight="30.0" prefWidth="198.0" styleClass="text" />
+      <JFXButton layoutX="669.0" layoutY="456.0" onAction="#handleProcess" prefHeight="28.0" prefWidth="112.0" style="-fx-background-color: #660033;" text="Process" textFill="#f8f7f7" />
+      <JFXButton layoutX="840.0" layoutY="378.0" onAction="#handleSaveAs" prefHeight="28.0" prefWidth="93.0" style="-fx-background-color: #00e673;" text="Browse" />
+      <JFXButton layoutX="840.0" layoutY="324.0" onAction="#handleBrowse" prefHeight="28.0" prefWidth="93.0" style="-fx-background-color: #00e673;" text="Browse" />
+      <JFXComboBox fx:id="combotype" layoutX="840.0" layoutY="205.0" prefHeight="28.0" prefWidth="93.0" promptText="Types" />
+      <JFXButton layoutX="840.0" layoutY="63.0" onAction="#backSignout" prefHeight="28.0" prefWidth="93.0" style="-fx-background-color: #cc0000;" text="Sign Out" textFill="#fffdfd" />
+      <Text fx:id="msg" layoutX="600.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" wrappingWidth="250.00000596046448" />
+      <JFXButton layoutX="796.0" layoutY="456.0" onAction="#dataClear" prefHeight="28.0" prefWidth="112.0" style="-fx-background-color: #660033;" text="Clear" textFill="#f8f7f7" />
+      <JFXButton layoutX="543.0" layoutY="456.0" onAction="#backHome" prefHeight="28.0" prefWidth="112.0" style="-fx-background-color: #660033;" text="Back" textFill="#f8f7f7" />
+      <ImageView fitHeight="174.0" fitWidth="336.0" layoutX="109.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@How-SSL-Encryption-works.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="180.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textheader" text="Data Secure System" wrappingWidth="240.95703125" />
+   </children>
+</AnchorPane>
